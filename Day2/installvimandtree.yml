@@ -1,0 +1,12 @@
+- name: This playbook will demonstrate apt module usage
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install vim editor
+      apt: name=vim update_cache=yes state=latest
+      register: output 
+
+    - debug: var=output
+
+    - name: Install tree utility
+      apt: name=tree update_cache=yes state=present

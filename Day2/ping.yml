@@ -1,0 +1,6 @@
+- name: This play will ping all the containers
+  hosts: all
+  gather_facts: False
+  tasks:
+    - name: Ping the container
+      ping:

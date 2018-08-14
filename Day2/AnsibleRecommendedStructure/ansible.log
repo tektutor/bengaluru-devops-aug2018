@@ -1,0 +1,50 @@
+2018-08-14 02:50:22,485 p=28152 u=root |  PLAY [Install, Configure and deploy web page in nginx web server] **************
+2018-08-14 02:50:22,495 p=28152 u=root |  TASK [Gathering Facts] *********************************************************
+2018-08-14 02:50:23,180 p=28152 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:23,185 p=28152 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:23,195 p=28152 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:23,210 p=28152 u=root |  TASK [Install nginx web server] ************************************************
+2018-08-14 02:50:28,760 p=28152 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:28,822 p=28152 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:28,914 p=28152 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:28,931 p=28152 u=root |  TASK [Create web root folder] **************************************************
+2018-08-14 02:50:29,270 p=28152 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:29,278 p=28152 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:29,286 p=28152 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:29,303 p=28152 u=root |  TASK [Configure nginx web root folder] *****************************************
+2018-08-14 02:50:29,802 p=28152 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:29,827 p=28152 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:29,846 p=28152 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:29,866 p=28152 u=root |  TASK [Deploy web page] *********************************************************
+2018-08-14 02:50:30,300 p=28152 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:30,309 p=28152 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:30,343 p=28152 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:30,345 p=28152 u=root |  PLAY RECAP *********************************************************************
+2018-08-14 02:50:30,345 p=28152 u=root |  ubuntu1                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-14 02:50:30,345 p=28152 u=root |  ubuntu2                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-14 02:50:30,345 p=28152 u=root |  ubuntu3                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-14 02:50:57,453 p=29323 u=root |  PLAY [Install, Configure and deploy web page in nginx web server] **************
+2018-08-14 02:50:57,463 p=29323 u=root |  TASK [Gathering Facts] *********************************************************
+2018-08-14 02:50:58,013 p=29323 u=root |  ok: [ubuntu3]
+2018-08-14 02:50:58,019 p=29323 u=root |  ok: [ubuntu1]
+2018-08-14 02:50:58,036 p=29323 u=root |  ok: [ubuntu2]
+2018-08-14 02:50:58,055 p=29323 u=root |  TASK [Install nginx web server] ************************************************
+2018-08-14 02:51:03,294 p=29323 u=root |  ok: [ubuntu1]
+2018-08-14 02:51:04,405 p=29323 u=root |  ok: [ubuntu2]
+2018-08-14 02:51:05,022 p=29323 u=root |  ok: [ubuntu3]
+2018-08-14 02:51:05,037 p=29323 u=root |  TASK [Create web root folder] **************************************************
+2018-08-14 02:51:05,390 p=29323 u=root |  ok: [ubuntu1]
+2018-08-14 02:51:05,402 p=29323 u=root |  ok: [ubuntu3]
+2018-08-14 02:51:05,413 p=29323 u=root |  ok: [ubuntu2]
+2018-08-14 02:51:05,434 p=29323 u=root |  TASK [Configure nginx web root folder] *****************************************
+2018-08-14 02:51:05,909 p=29323 u=root |  ok: [ubuntu2]
+2018-08-14 02:51:05,944 p=29323 u=root |  ok: [ubuntu3]
+2018-08-14 02:51:05,962 p=29323 u=root |  ok: [ubuntu1]
+2018-08-14 02:51:05,981 p=29323 u=root |  TASK [Deploy web page] *********************************************************
+2018-08-14 02:51:06,409 p=29323 u=root |  ok: [ubuntu1]
+2018-08-14 02:51:06,412 p=29323 u=root |  ok: [ubuntu2]
+2018-08-14 02:51:06,477 p=29323 u=root |  ok: [ubuntu3]
+2018-08-14 02:51:06,480 p=29323 u=root |  PLAY RECAP *********************************************************************
+2018-08-14 02:51:06,480 p=29323 u=root |  ubuntu1                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-14 02:51:06,480 p=29323 u=root |  ubuntu2                    : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-14 02:51:06,480 p=29323 u=root |  ubuntu3                    : ok=5    changed=0    unreachable=0    failed=0   

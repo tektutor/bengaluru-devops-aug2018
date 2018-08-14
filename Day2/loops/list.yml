@@ -1,0 +1,12 @@
+- name: This playbook demonstrates use of list variable and loops
+  hosts: all 
+  vars:
+    software_tools:
+        - vim
+        - tree
+        - default-jdk
+        - maven
+  tasks:
+    - name: Print the list values
+      apt: name="{{item}}" update_cache=yes state=latest
+      with_list: "{{software_tools}}"
