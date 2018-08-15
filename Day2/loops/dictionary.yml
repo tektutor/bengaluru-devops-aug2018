@@ -1,5 +1,5 @@
 - name: Demonstrates use of dictionary variables and loops
-  hosts: all 
+  hosts: localhost 
   vars:
     proxy_conf:
        http_proxy: http://10.20.30.40:8080
