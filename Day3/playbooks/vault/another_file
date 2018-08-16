@@ -1,0 +1,10 @@
+user_credentials:
+ jegan_user:
+   name: jegan
+   password: mypassword
+
+
+contacts:
+ Nitesh:
+    name: Nitesh
+    mobile: 99934343

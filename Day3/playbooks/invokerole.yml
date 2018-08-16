@@ -1,0 +1,16 @@
+- name: Demonstrate invoking our custom ansible role
+  hosts: all
+  post_tasks:
+      - name: This is a post task
+        debug: msg="Post task invoked ..."
+  roles:
+    - nginx
+
+  pre_tasks:
+    - name: Pre Task
+      debug: msg="Pre task invoked ..."
+
+  tasks:
+     - name: This is a task
+       debug: msg="Task invoked ..."
+

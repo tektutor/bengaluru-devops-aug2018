@@ -1,0 +1,13 @@
+- name: Access vautl protected data
+  hosts: localhost
+  vars_files:
+     - contacts.yml
+     - another_file
+  tasks:
+    - name: Print the contact details
+      debug: msg="{{item.value.name}} ==> {{item.value.mobile}}"
+      with_dict: "{{contacts}}"
+
+    - name: Print the user credentials
+      debug: msg="{{item.value.name}} is {{item.value.password}}"
+      with_dict: "{{user_credentials}}"

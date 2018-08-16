@@ -1,0 +1,49 @@
+- name: Demonstrates conditional nginx installation Ubuntu
+  hosts: ubuntu 
+  vars:
+    - greeting_msg: DevOps!
+    - provisioner_tool: Docker
+    - automation_tool: Ansible
+  tasks:
+    - name: Install nginx web server in Ubuntu
+      apt: name=nginx state=latest update_cache=yes
+
+    - name: Create web root folder
+      file: path=/var/html mode=0777 state=directory
+
+    - name: Configure nginx web root folder in Ubuntu
+      copy: src=default dest=/etc/nginx/sites-available/default
+
+    - name: Deploy web page in nginx web server
+      template: src=index.html.j2 dest=/var/html/index.html
+
+    - name: Restart nginx
+      command: service nginx restart
+
+- name: Install nginx in CentOS
+  hosts: centos
+  vars:
+    - greeting_msg: DevOps!
+    - provisioner_tool: Docker
+    - automation_tool: Ansible
+  tasks:
+    - name: Create web root folder
+      file: path=/var/html mode=0777 state=directory
+
+    - name: Perform yum update in CentOS
+      yum: name=* state=latest 
+
+    - name: Install the Extra Packages for Enterprise Linux (EPEL) in CentOS
+      yum: name=epel-release state=latest 
+
+    - name: Perform yum update in CentOS
+      yum: name=* state=latest 
+
+    - name: Install nginx web server in CentOS 
+      yum: name=nginx state=latest 
+
+    - name: Configure nginx web root folder in CentOS 
+      copy: src=default.conf dest=/etc/nginx/conf.d/default.conf
+
+    - name: Deploy web page in nginx web server
+      template: src=index.html.j2 dest=/var/html/index.html
