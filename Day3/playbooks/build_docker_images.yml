@@ -3,12 +3,14 @@
   tasks:
     - name: Build Ubuntu Ansible Docker Image
       docker_image:
-          name: ansible-ubuntu
-          dockerfile: ../docker_images/UbuntuDockerfile
+          name: "ansible-ubuntu"
+          path: "../docker_images"
+          dockerfile: UbuntuDockerfile
           state: build
 
     - name: Build CentOS Ansible Docker Image
       docker_image:
-          name: ansible-centos
-          dockerfile: ../docker_images/CentOSDockerfile
+          name: "ansible-centos"
+          path: "../docker_images"
+          dockerfile: CentOSDockerfile
           state: build
