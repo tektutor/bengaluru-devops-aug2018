@@ -1,0 +1,14 @@
+- name: Build Ubuntu and CentOS Docker Images
+  hosts: localhost
+  tasks:
+    - name: Build Ubuntu Ansible Docker Image
+      docker_image:
+          name: ansible-ubuntu
+          dockerfile: ../docker_images/UbuntuDockerfile
+          state: build
+
+    - name: Build CentOS Ansible Docker Image
+      docker_image:
+          name: ansible-centos
+          dockerfile: ../docker_images/CentOSDockerfile
+          state: build
